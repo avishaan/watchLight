@@ -18,9 +18,11 @@
                                     </connections>
                                 </button>
                             </items>
+                            <edgeInsets key="margins" left="0.0" right="0.0" top="0.0" bottom="0.0"/>
                         </group>
                     </items>
                     <connections>
+                        <outlet property="button" destination="dim-Qd-9tW" id="bPD-ax-Tql"/>
                         <outlet property="interfaceGroup" destination="Vz2-vC-ylf" id="3Q8-8h-Sqg"/>
                     </connections>
                 </controller>
