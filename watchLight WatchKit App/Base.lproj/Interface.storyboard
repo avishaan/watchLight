@@ -12,7 +12,7 @@
                     <items>
                         <group width="1" height="151" alignment="left" id="Vz2-vC-ylf">
                             <items>
-                                <button width="1" alignment="left" backgroundImage="lightButtonBackground" id="nRe-Nc-hdF">
+                                <button width="117" height="118" alignment="center" verticalAlignment="center" backgroundImage="lightButtonBackground" id="nRe-Nc-hdF">
                                     <connections>
                                         <action selector="onLightTap" destination="AgC-eL-Hgc" id="MG0-WN-1Dm"/>
                                     </connections>
