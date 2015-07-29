@@ -35,8 +35,13 @@ class InterfaceController: WKInterfaceController {
   @IBAction func onButtonTap() {
     if (!isFlashLightOn){
       interfaceGroup.setBackgroundColor(UIColor.whiteColor())
+      println("on")
+      isFlashLightOn = true
+//      interfaceGroup.setAlpha(0.5)
     } else {
       interfaceGroup.setBackgroundColor(UIColor.clearColor())
+      println("off")
+      isFlashLightOn = false
     }
   }
   
