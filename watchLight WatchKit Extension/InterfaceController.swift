@@ -14,7 +14,7 @@ var isFlashLightOn = false
 
 class InterfaceController: WKInterfaceController {
   
-  @IBOutlet weak var button: WKInterfaceButton!
+  @IBOutlet weak var lightButton: WKInterfaceButton!
   @IBOutlet weak var interfaceGroup: WKInterfaceGroup!
   override func awakeWithContext(context: AnyObject?) {
     super.awakeWithContext(context)
@@ -32,7 +32,7 @@ class InterfaceController: WKInterfaceController {
     // This method is called when watch view controller is no longer visible
     super.didDeactivate()
   }
-  @IBAction func onButtonTap() {
+  @IBAction func onLightTap() {
     if (!isFlashLightOn){
       interfaceGroup.setBackgroundColor(UIColor.whiteColor())
       println("on")
@@ -44,5 +44,4 @@ class InterfaceController: WKInterfaceController {
       isFlashLightOn = false
     }
   }
-  
 }
