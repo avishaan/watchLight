@@ -647,6 +647,7 @@
 				82F5D2E21B6779A200633CDD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		82F5D2E31B6779A200633CDD /* Build configuration list for PBXNativeTarget "watchLightTests" */ = {
 			isa = XCConfigurationList;
@@ -655,6 +656,7 @@
 				82F5D2E51B6779A200633CDD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		82F5D3051B677ADD00633CDD /* Build configuration list for PBXNativeTarget "watchLight WatchKit App" */ = {
 			isa = XCConfigurationList;
@@ -663,6 +665,7 @@
 				82F5D3071B677ADD00633CDD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		82F5D3081B677ADD00633CDD /* Build configuration list for PBXNativeTarget "watchLight WatchKit Extension" */ = {
 			isa = XCConfigurationList;
@@ -671,6 +674,7 @@
 				82F5D30A1B677ADD00633CDD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
