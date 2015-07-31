@@ -32,10 +32,11 @@
         <!--Glance Interface Controller-->
         <scene sceneID="rjY-Ar-IMT">
             <objects>
-                <glanceController spacing="0.0" id="Sv0-Ai-Zie" customClass="GlanceController" customModule="watchLight_WatchKit_App" customModuleProvider="target">
+                <glanceController spacing="0.0" topTemplateType="mediumBody1" id="Sv0-Ai-Zie" customClass="GlanceController" customModule="watchLight_WatchKit_App" customModuleProvider="target">
                     <items>
-                        <group alignment="left" id="gv7-I2-MZq"/>
-                        <group alignment="left" id="eew-Gs-W6Y"/>
+                        <label alignment="left" text="Light On" id="F4c-1n-toL"/>
+                        <label alignment="left" text="(tap)" id="hRm-GX-BKd"/>
+                        <group alignment="left" backgroundImage="lightButtonBackground" contentMode="scaleAspectFit" layout="vertical" id="eew-Gs-W6Y"/>
                     </items>
                     <edgeInsets key="margins" left="0.0" right="0.0" top="0.0" bottom="14"/>
                 </glanceController>
