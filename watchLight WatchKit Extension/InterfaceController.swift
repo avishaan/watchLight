@@ -21,6 +21,9 @@ class InterfaceController: WKInterfaceController {
     
     // Configure interface objects here.
     interfaceGroup.setCornerRadius(0.0)
+    
+    // start with light on
+    self.onLightTap()
   }
   
   override func willActivate() {
