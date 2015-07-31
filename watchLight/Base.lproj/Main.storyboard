@@ -2,6 +2,8 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
@@ -16,54 +18,99 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Hk8-bL-eSy">
-                                <rect key="frame" x="68" y="0.0" width="465" height="136"/>
-                                <string key="text">In order to use the app on your watch, make sure you have set up this app in your apple watch configuration on your phone like the below image. After that it will show up in your Apple Watch glances which you can access by scrolling up from the bottom of your Apple Watch.</string>
-                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
-                                <color key="textColor" red="0.83921568627450982" green="0.3411764705882353" blue="0.15294117647058825" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Step 1: Click Apple Watch on iPhone" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TGV-bp-Hqv">
-                                <rect key="frame" x="46" y="181" width="301" height="51"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Step 1: Click Apple Watch on iPhone" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TGV-bp-Hqv">
+                                <rect key="frame" x="160" y="80" width="280" height="47.5"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="TGV-bp-Hqv" secondAttribute="height" multiplier="301:51" id="ElT-k6-vEx"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
                                 <color key="textColor" red="0.83921568629999999" green="0.3411764706" blue="0.1529411765" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="step1ClickAppleWatch" translatesAutoresizingMaskIntoConstraints="NO" id="JxL-po-EeN">
-                                <rect key="frame" x="331" y="153" width="202" height="108"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="step1ClickAppleWatch" translatesAutoresizingMaskIntoConstraints="NO" id="JxL-po-EeN">
+                                <rect key="frame" x="161" y="116" width="278" height="108"/>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Step 2: Click on the App Name" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qma-Bo-yUV">
-                                <rect key="frame" x="301" y="287" width="301" height="51"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Step 2: Click on the App Name" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qma-Bo-yUV">
+                                <rect key="frame" x="183" y="221" width="235.5" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="qma-Bo-yUV" secondAttribute="height" multiplier="301:51" id="Obn-8n-pqc"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
                                 <color key="textColor" red="0.83921568629999999" green="0.3411764706" blue="0.1529411765" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="step2FindApp" translatesAutoresizingMaskIntoConstraints="NO" id="g2f-Od-zHB">
-                                <rect key="frame" x="46" y="247" width="247" height="132"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="step2FindApp" translatesAutoresizingMaskIntoConstraints="NO" id="g2f-Od-zHB">
+                                <rect key="frame" x="196" y="252" width="208" height="145"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="145" id="1is-zA-O7j"/>
+                                    <constraint firstAttribute="width" constant="208" id="k1N-fZ-EiW"/>
+                                </constraints>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Step 3: Click on the App Name" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lbK-g5-7IC">
-                                <rect key="frame" x="46" y="404" width="301" height="51"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Step 3: Click on the App Name" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lbK-g5-7IC">
+                                <rect key="frame" x="183" y="407" width="235.5" height="20"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
                                 <color key="textColor" red="0.83921568629999999" green="0.3411764706" blue="0.1529411765" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="step3EnableGlances" translatesAutoresizingMaskIntoConstraints="NO" id="q55-PY-Qfk">
-                                <rect key="frame" x="337" y="377" width="196" height="105"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="step3EnableGlances" translatesAutoresizingMaskIntoConstraints="NO" id="q55-PY-Qfk">
+                                <rect key="frame" x="164.5" y="432" width="271" height="145"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="q55-PY-Qfk" secondAttribute="height" multiplier="28:15" id="CPJ-mw-3LN"/>
+                                </constraints>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GTE-An-JKs">
-                                <rect key="frame" x="46" y="539" width="72" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GTE-An-JKs">
+                                <rect key="frame" x="16" y="550" width="72" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="27l-Wz-8xc"/>
+                                    <constraint firstAttribute="width" constant="72" id="7S4-Y5-oYd"/>
+                                </constraints>
                                 <state key="normal" title="More Help">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qZ4-Tv-nx1">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qZ4-Tv-nx1">
                                 <rect key="frame" x="534" y="550" width="50" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="4kL-w7-orv"/>
+                                    <constraint firstAttribute="width" constant="50" id="Xoc-84-gmS"/>
+                                </constraints>
                                 <state key="normal" title="Donate">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="You may need to setup the configuration as follows. After that you won't need to use the iPhone to use the Watch App." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="Hk8-bL-eSy">
+                                <rect key="frame" x="36" y="10" width="528" height="82"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
+                                <color key="textColor" red="0.83921568627450982" green="0.3411764705882353" blue="0.15294117647058825" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="0.93725490196078431" green="0.89803921568627454" blue="0.77647058823529413" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="Hk8-bL-eSy" secondAttribute="trailing" constant="20" id="0dx-5q-oDU"/>
+                            <constraint firstItem="JxL-po-EeN" firstAttribute="centerX" secondItem="qma-Bo-yUV" secondAttribute="centerX" constant="-0.5" id="31q-xM-n5a"/>
+                            <constraint firstItem="g2f-Od-zHB" firstAttribute="centerX" secondItem="lbK-g5-7IC" secondAttribute="centerX" id="3qX-wZ-0Wl"/>
+                            <constraint firstAttribute="width" secondItem="JxL-po-EeN" secondAttribute="height" multiplier="50:9" id="4yc-Sw-2Ap"/>
+                            <constraint firstAttribute="centerX" secondItem="Hk8-bL-eSy" secondAttribute="centerX" constant="-0.5" id="72Z-bF-zN6"/>
+                            <constraint firstItem="g2f-Od-zHB" firstAttribute="centerX" secondItem="qma-Bo-yUV" secondAttribute="centerX" constant="-0.75" id="FDP-hX-Uir"/>
+                            <constraint firstAttribute="centerX" secondItem="TGV-bp-Hqv" secondAttribute="centerX" constant="-0.5" id="Fql-e2-kvO"/>
+                            <constraint firstItem="TGV-bp-Hqv" firstAttribute="centerX" secondItem="JxL-po-EeN" secondAttribute="centerX" constant="0.5" id="J59-LL-PXQ"/>
+                            <constraint firstItem="qma-Bo-yUV" firstAttribute="top" secondItem="JxL-po-EeN" secondAttribute="bottom" constant="-3" id="JVd-54-5pE"/>
+                            <constraint firstItem="lbK-g5-7IC" firstAttribute="top" secondItem="g2f-Od-zHB" secondAttribute="bottom" constant="10" id="JXZ-7C-IcY"/>
+                            <constraint firstItem="Hk8-bL-eSy" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="-10" id="Qye-4V-TS3"/>
+                            <constraint firstItem="GTE-An-JKs" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" id="WO9-Br-g19"/>
+                            <constraint firstItem="q55-PY-Qfk" firstAttribute="centerX" secondItem="lbK-g5-7IC" secondAttribute="centerX" constant="-0.75" id="eHM-KQ-KmS"/>
+                            <constraint firstItem="qZ4-Tv-nx1" firstAttribute="trailing" secondItem="kh9-bI-dsS" secondAttribute="trailingMargin" id="hHo-ze-h8J"/>
+                            <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="GTE-An-JKs" secondAttribute="bottom" constant="20" id="i4g-Mq-Qhc"/>
+                            <constraint firstItem="TGV-bp-Hqv" firstAttribute="top" secondItem="Hk8-bL-eSy" secondAttribute="bottom" constant="-12" id="jKj-qn-Axg"/>
+                            <constraint firstItem="g2f-Od-zHB" firstAttribute="top" secondItem="qma-Bo-yUV" secondAttribute="bottom" constant="-9" id="kB0-bL-9hE"/>
+                            <constraint firstItem="Hk8-bL-eSy" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" constant="20" id="ki4-Gd-K2c"/>
+                            <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="qZ4-Tv-nx1" secondAttribute="bottom" constant="20" id="mSb-rn-i2g"/>
+                            <constraint firstItem="q55-PY-Qfk" firstAttribute="height" secondItem="g2f-Od-zHB" secondAttribute="height" id="oB7-AF-e7i"/>
+                            <constraint firstItem="JxL-po-EeN" firstAttribute="top" secondItem="TGV-bp-Hqv" secondAttribute="bottom" constant="-11.5" id="vUh-HI-gey"/>
+                            <constraint firstItem="q55-PY-Qfk" firstAttribute="top" secondItem="lbK-g5-7IC" secondAttribute="bottom" constant="5" id="wxH-x6-CCC"/>
+                            <constraint firstAttribute="centerY" secondItem="Hk8-bL-eSy" secondAttribute="centerY" constant="249" id="ywP-Wm-QA5"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
