@@ -24,35 +24,35 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Step 1: Click Apple Watch on iPhone" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TGV-bp-Hqv">
-                                <rect key="frame" x="46" y="151" width="301" height="51"/>
+                                <rect key="frame" x="46" y="181" width="301" height="51"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
                                 <color key="textColor" red="0.83921568629999999" green="0.3411764706" blue="0.1529411765" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="step1ClickAppleWatch" translatesAutoresizingMaskIntoConstraints="NO" id="JxL-po-EeN">
-                                <rect key="frame" x="331" y="123" width="202" height="108"/>
+                                <rect key="frame" x="331" y="153" width="202" height="108"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Step 2: Click on the App Name" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qma-Bo-yUV">
-                                <rect key="frame" x="301" y="257" width="301" height="51"/>
+                                <rect key="frame" x="301" y="287" width="301" height="51"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
                                 <color key="textColor" red="0.83921568629999999" green="0.3411764706" blue="0.1529411765" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="step2FindApp" translatesAutoresizingMaskIntoConstraints="NO" id="g2f-Od-zHB">
-                                <rect key="frame" x="46" y="217" width="247" height="132"/>
+                                <rect key="frame" x="46" y="247" width="247" height="132"/>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Step 2: Click on the App Name" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lbK-g5-7IC">
-                                <rect key="frame" x="46" y="374" width="301" height="51"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Step 3: Click on the App Name" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lbK-g5-7IC">
+                                <rect key="frame" x="46" y="404" width="301" height="51"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
                                 <color key="textColor" red="0.83921568629999999" green="0.3411764706" blue="0.1529411765" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="step3EnableGlances" translatesAutoresizingMaskIntoConstraints="NO" id="q55-PY-Qfk">
-                                <rect key="frame" x="337" y="347" width="196" height="105"/>
+                                <rect key="frame" x="337" y="377" width="196" height="105"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GTE-An-JKs">
-                                <rect key="frame" x="46" y="539" width="66" height="30"/>
-                                <state key="normal" title="More Info">
+                                <rect key="frame" x="46" y="539" width="72" height="30"/>
+                                <state key="normal" title="More Help">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                             </button>
